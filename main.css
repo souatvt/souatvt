@@ -1,0 +1,327 @@
+@media screen and (max-width: 768px) {
+  .tab {
+    font-size: 0.8rem; }
+
+  .tabs-container {
+    flex-direction: column;
+    width: 85%;
+    height: 150px; }
+
+  .backgroundcontent {
+    background-image: url("./images/winter_350.png"); } }
+/* --------------------
+		  Header
+   --------------------*/
+.header {
+  max-width: 100%;
+  height: auto;
+  display: center;
+  text-align: left; }
+  .header img {
+    padding: 5% 0 2% 5%; }
+
+.header-table {
+  vertical-align: center;
+  display: inline-block;
+  border-collapse: collapse;
+  padding: 0 0 2% 0; }
+  .header-table th {
+    text-align: left;
+    height: 0rem;
+    vertical-align: bottom; }
+  .header-table td {
+    text-align: left;
+    height: 0rem;
+    vertical-align: top; }
+  .header-table h1, .header-table h2, .header-table h3 {
+    color: black; }
+  .header-table h1 {
+    font-weight: 300; }
+  .header-table h1, .header-table h2 {
+    padding: 0 0 0 0.5rem;
+    height: 0rem;
+    display: inline-block; }
+  .header-table h2, .header-table h3 {
+    font-weight: 100; }
+  .header-table h3 {
+    height: 0rem;
+    padding: 0 0 0 0.5rem; }
+  .header-table .divider {
+    font-weight: 400;
+    font-size: 2rem; }
+
+/* --------------------
+		  Menu
+   --------------------*/
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100px;
+  position: relative;
+  background: white;
+  text-align: center; }
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: LightGray;
+  z-index: 10; }
+  .tabs-container--top {
+    position: fixed;
+    top: 0; }
+
+.spacer {
+  padding: 2.5%; }
+
+.tab {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1rem; }
+  .tab:hover {
+    color: white;
+    background: #003979;
+    transition: all 0.5s ease; }
+
+.tab-select {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  color: white;
+  background: #003979; }
+
+.spacerflex {
+  display: flex;
+  flex: 1; }
+
+.menu-contact {
+  padding: 0 0.25rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1rem; }
+  .menu-contact:hover {
+    color: white;
+    background: #003979;
+    transition: all 0.5s ease; }
+
+/* --------------------
+		Footer
+   --------------------*/
+.footer-container {
+  font-family: "Roboto", "Lato", sans-serif;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: LightGray;
+  z-index: 10; }
+  .footer-container h6 {
+    text-align: left;
+    padding: 0 2rem; }
+  .footer-container--top {
+    position: fixed;
+    top: 0; }
+
+/* --------------------
+	     General
+   --------------------*/
+body {
+  font-family: "Roboto", "Lato", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+/* --------------------
+	  Page Specific
+   --------------------*/
+/* --------------------
+	  Home Page
+   --------------------*/
+.backgroundcontent-home {
+  background-image: url("./images/winter.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  padding: 5%; }
+  .backgroundcontent-home h3 {
+    font-size: 1rem;
+    font-weight: 100; }
+  .backgroundcontent-home h1, .backgroundcontent-home h3 {
+    display: block; }
+  .backgroundcontent-home h1 {
+    letter-spacing: 1rem;
+    font-weight: 400; }
+
+.preview {
+  padding: 2rem;
+  justify-content: center;
+  display: center;
+  font-family: "Roboto", "Lato", sans-serif;
+  text-align: center;
+  display: block; }
+  .preview .nonlist {
+    font-weight: 300;
+    padding-bottom: 1rem; }
+  .preview .list {
+    font-weight: 300; }
+  .preview h4 {
+    font-weight: 100; }
+  .preview a {
+    padding: 1rem;
+    font-weight: 100;
+    color: #003979;
+    border: 1px solid #003979;
+    border-radius: 25px;
+    transition: all 0.5s ease; }
+    .preview a:hover {
+      color: white;
+      background: #003979;
+      transition: all 0.5s ease; }
+  .preview img {
+    padding-top: 1rem;
+    display: block;
+    margin: 0 auto; }
+  .preview h5 {
+    font-size: 2rem; }
+  .preview .last {
+    padding-bottom: 1rem; }
+  .preview .list {
+    font-weight: 300; }
+
+/* --------------------
+	  Other Pages
+   --------------------*/
+.backgroundcontent {
+  background-image: url("./images/winter.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  padding: 5%; }
+  .backgroundcontent h3 {
+    font-size: 3rem;
+    font-weight: 100;
+    display: block; }
+
+.about, .pillars, .brothers, .gallery, .recruitment, .contact {
+  padding: 2rem;
+  justify-content: center;
+  display: center;
+  font-family: "Roboto", "Lato", sans-serif;
+  text-align: center;
+  display: block; }
+  .about .text, .pillars .text, .brothers .text, .gallery .text, .recruitment .text, .contact .text {
+    font-weight: 300;
+    padding-bottom: 1rem; }
+  .about h4, .pillars h4, .brothers h4, .gallery h4, .recruitment h4, .contact h4 {
+    font-weight: 100; }
+  .about img, .pillars img, .brothers img, .gallery img, .recruitment img, .contact img {
+    padding-top: 1rem;
+    display: block;
+    margin: 0 auto; }
+  .about h5, .pillars h5, .brothers h5, .gallery h5, .recruitment h5, .contact h5 {
+    font-size: 2rem; }
+
+.related {
+  padding: 2rem;
+  justify-content: center;
+  display: center;
+  font-family: "Roboto", "Lato", sans-serif;
+  text-align: center;
+  display: block; }
+  .related .nonlist, .related h3 {
+    font-weight: 300;
+    padding-bottom: 1rem; }
+  .related .list {
+    font-weight: 300; }
+  .related h4, .related h2 {
+    font-weight: 100; }
+  .related a {
+    padding: 1rem;
+    font-weight: 100;
+    color: #003979;
+    border: 1px solid #003979;
+    border-radius: 25px;
+    transition: all 0.5s ease; }
+    .related a:hover {
+      color: white;
+      background: #003979;
+      transition: all 0.5s ease; }
+  .related img {
+    padding-top: 1rem;
+    display: block;
+    margin: 0 auto; }
+  .related h5 {
+    font-size: 2rem; }
+  .related .last {
+    padding-bottom: 1rem; }
+  .related .list {
+    font-weight: 300; }
+
+.line {
+  color: LightGray;
+  font-weight: 100; }
+  .line h5 {
+    font-size: 2rem; }
+
+.recruitment .headline {
+  font-weight: 400; }
+.recruitment .date {
+  font-weight: 100; }
+.recruitment .event {
+  font-weight: 300; }
+.recruitment .location {
+  font-weight: 100; }
+
+.page-contact {
+  padding: 1rem;
+  justify-content: center;
+  display: center;
+  text-align: center;
+  transition: all 0.5s ease;
+  display: inline-block; }
+  .page-contact:hover {
+    border-radius: 25px;
+    background: #003979;
+    transition: all 0.5s ease; }
+
+.contact .info {
+  font-weight: 100; }
+  .contact .info a {
+    font-weight: 300;
+    color: #003979; }
+    .contact .info a:hover {
+      color: LightGray; }
+
+.about {
+  padding-right: 10rem;
+  padding-left: 10rem; }
+
+/*# sourceMappingURL=main.css.map */
