@@ -315,8 +315,12 @@ a {
 	}
 	img {
 	  padding-top: 1rem;
-      display: block;
+      display: inline-block;
+	  align-items: center;
       margin: 0 auto;
+	  max-width: 100%;
+      height: auto;
+      width: auto\9;
     }
 	h5 {
 	  font-size: 2rem;
@@ -390,6 +394,9 @@ a {
   .location {
     font-weight: 100;
   }
+  .disclaimer {
+    font-weight: 100;
+  }
 }
 
 .page-contact {
@@ -420,7 +427,27 @@ a {
   }
 }
 
-.about {
+.about, .pillars {
   padding-right: 10rem;
   padding-left: 10rem;
+}
+
+img {
+	max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+.jump {
+  padding: 1rem;
+  font-weight: 100;
+  color: $souBlue;
+  border: 1px solid $souBlue;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  &:hover {
+	color: white;
+  	background: $souBlue;
+	transition: all 0.5s ease;
+  }
 }
