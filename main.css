@@ -1,14 +1,3 @@
-@media screen and (max-width: 768px) {
-  .tab {
-    font-size: 0.8rem; }
-
-  .tabs-container {
-    flex-direction: column;
-    width: 85%;
-    height: 150px; }
-
-  .backgroundcontent {
-    background-image: url("./images/winter_350.png"); } }
 /* --------------------
 		  Header
    --------------------*/
@@ -16,23 +5,18 @@
   max-width: 100%;
   height: auto;
   display: center;
-  text-align: left; }
+  text-align: left;
+  margin: 4%; }
   .header img {
     padding: 5% 0 2% 5%; }
 
+.logo {
+  float: left; }
+
 .header-table {
-  vertical-align: center;
+  float: left;
   display: inline-block;
-  border-collapse: collapse;
   padding: 0 0 2% 0; }
-  .header-table th {
-    text-align: left;
-    height: 0rem;
-    vertical-align: bottom; }
-  .header-table td {
-    text-align: left;
-    height: 0rem;
-    vertical-align: top; }
   .header-table h1, .header-table h2, .header-table h3 {
     color: black; }
   .header-table h1 {
@@ -44,6 +28,7 @@
   .header-table h2, .header-table h3 {
     font-weight: 100; }
   .header-table h3 {
+    clear: both;
     height: 0rem;
     padding: 0 0 0 0.5rem; }
   .header-table .divider {
@@ -54,6 +39,7 @@
 		  Menu
    --------------------*/
 .menu {
+  clear: both;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -160,7 +146,9 @@ a {
 	  Home Page
    --------------------*/
 .backgroundcontent-home {
-  background-image: url("./images/winter.png");
+  clear: both;
+  /* change the image for home page */
+  background-image: url("./img/fall.jpg");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,7 +207,9 @@ a {
 	  Other Pages
    --------------------*/
 .backgroundcontent {
-  background-image: url("./images/winter.png");
+  clear: both;
+  /* default background image */
+  background-image: url("./img/fall.jpg");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,28 +224,105 @@ a {
     font-weight: 100;
     display: block; }
 
-.about, .pillars, .brothers, .gallery, .recruitment, .contact {
+.backgroundcontent-about {
+  /* change the image for about page */
+  background-image: url("./img/fall.jpg"); }
+
+.backgroundcontent-pillars {
+  /* change the image for pillars page */
+  background-image: url("./img/fall.jpg"); }
+
+.backgroundcontent-brothers {
+  /* change the image for brothers page */
+  background-image: url("./img/fall.jpg"); }
+
+.backgroundcontent-gallery {
+  /* change the image for gallery page */
+  background-image: url("./img/fall.jpg"); }
+
+.backgroundcontent-recruitment {
+  /* change the image for recruitment page */
+  background-image: url("./img/fall.jpg"); }
+
+.backgroundcontent-contact {
+  /* change the image for contact page */
+  background-image: url("./img/fall.jpg"); }
+
+.backgroundcontent-register {
+  /* change the image for register page */
+  background-image: url("./img/fall.jpg"); }
+
+.about, .pillars, .brothers, .gallery, .recruitment, .contact, .register {
   padding: 2rem;
   justify-content: center;
   display: center;
   font-family: "Roboto", "Lato", sans-serif;
   text-align: center;
   display: block; }
-  .about .text, .pillars .text, .brothers .text, .gallery .text, .recruitment .text, .contact .text {
+  .about .text, .pillars .text, .brothers .text, .gallery .text, .recruitment .text, .contact .text, .register .text {
     font-weight: 300;
     padding-bottom: 1rem; }
-  .about h4, .pillars h4, .brothers h4, .gallery h4, .recruitment h4, .contact h4 {
+  .about h4, .pillars h4, .brothers h4, .gallery h4, .recruitment h4, .contact h4, .register h4 {
     font-weight: 100; }
-  .about img, .pillars img, .brothers img, .gallery img, .recruitment img, .contact img {
+  .about img, .pillars img, .brothers img, .gallery img, .recruitment img, .contact img, .register img {
     padding-top: 1rem;
     display: inline-block;
     align-items: center;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 500px;
     height: auto;
     width: auto\9; }
-  .about h5, .pillars h5, .brothers h5, .gallery h5, .recruitment h5, .contact h5 {
+  .about h5, .pillars h5, .brothers h5, .gallery h5, .recruitment h5, .contact h5, .register h5 {
     font-size: 2rem; }
+
+.register .text {
+  text-align: left; }
+.register button {
+  padding: 1rem;
+  font-weight: 100;
+  color: #003979;
+  border: 1px solid #003979;
+  border-radius: 25px;
+  transition: all 0.5s ease; }
+  .register button:hover {
+    color: white;
+    background: #003979;
+    transition: all 0.5s ease; }
+
+.about, .pillars, .register {
+  width: 600px;
+  text-align: center;
+  margin: auto;
+  padding-right: 10rem;
+  padding-left: 10rem; }
+
+.register .text {
+  text-align: left; }
+.register button {
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 100;
+  color: #003979;
+  border: 1px solid #003979;
+  border-radius: 25px;
+  transition: all 0.5s ease; }
+  .register button:hover {
+    color: white;
+    background: #003979;
+    transition: all 0.5s ease; }
+.register fieldset {
+  text-align: left;
+  border: none; }
+.register .registerform {
+  padding: 1rem;
+  border: 2px solid #003979; }
+
+.pillars th {
+  width: 300px; }
+.pillars td {
+  padding: 1rem; }
+.pillars .small-pillarinfo {
+  display: none; }
 
 .related {
   padding: 2rem;
@@ -294,6 +361,7 @@ a {
     font-weight: 300; }
 
 .line {
+  clear: both;
   color: LightGray;
   font-weight: 100; }
   .line h5 {
@@ -318,8 +386,6 @@ a {
     color: white;
     background: #003979;
     transition: all 0.5s ease; }
-.recruitment table {
-  width: 100%; }
 
 .page-contact {
   padding: 1rem;
@@ -341,10 +407,6 @@ a {
     .contact .info a:hover {
       color: LightGray; }
 
-.about, .pillars {
-  padding-right: 10rem;
-  padding-left: 10rem; }
-
 img {
   max-width: 100%;
   height: auto;
@@ -362,9 +424,137 @@ img {
     background: #003979;
     transition: all 0.5s ease; }
 
-.pillars th {
-  width: 300px; }
-.pillars td {
-  padding: 1rem; }
+.jump-container {
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.jump-contain {
+  float: left;
+  padding: 0.5rem;
+  padding-bottom: 2rem; }
+
+.card-container {
+  margin-left: 15%;
+  margin-right: 15%; }
+
+.card, .rushcard {
+  width: calc(33% - 1% - 30px);
+  height: 10rem;
+  /*10 rem*/
+  margin: 1% 1% 0 0;
+  padding: 15px;
+  background: WhiteSmoke;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  position: relative; }
+  .card img, .rushcard img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    padding: 15px;
+    max-height: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    overflow: hidden; }
+
+.rushcard {
+  height: 15rem; }
+
+.photocard {
+  width: calc(50% - 1% - 30px);
+  height: 25rem;
+  /*10 rem*/
+  margin: 1% 1% 0 0;
+  padding: 15px;
+  background: WhiteSmoke;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  position: relative; }
+  .photocard h4, .photocard h6 {
+    margin-bottom: 0px; }
+  .photocard h6 {
+    margin-top: 0px; }
+  .photocard img {
+    padding: 5px;
+    max-height: calc(75% - 30px);
+    max-width: calc(75% - 30px);
+    overflow: hidden; }
+
+.textcard {
+  width: calc(33% - 1% - 30px);
+  height: 3rem;
+  margin: 1% 1% 0 0;
+  padding: 15px;
+  background: WhiteSmoke;
+  float: left; }
+  .textcard h3 {
+    margin: 0px;
+    text-align: left;
+    padding: 0px; }
+
+#rushflyer {
+  width: calc(50% - 1% - 30px); }
+
+@media (max-width: 1084px) {
+  .card, .textcard, .rushcard {
+    width: calc(50% - 1% - 30px); }
+
+  .photocard {
+    width: calc(100% - 30px); } }
+@media (max-width: 946px) {
+  .about, .pillars {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    padding: 2rem; } }
+@media (max-width: 880px) {
+  .menu-contact {
+    display: none; }
+
+  .backgroundcontent, .backgroundcontent-home {
+    background-image: url("./img/fall_400.jpg"); }
+
+  .pillars .pillarinfo {
+    display: none; }
+  .pillars .small-pillarinfo {
+    display: block; }
+    .pillars .small-pillarinfo img {
+      width: 300px; }
+    .pillars .small-pillarinfo .text {
+      padding: 1rem; } }
+@media (max-width: 742px) {
+  .card, .textcard, .rushcard, #rushflyer {
+    width: calc(100% - 30px); }
+
+  .tab, .tab-select {
+    font-size: 0.75rem;
+    padding: 0 0.5rem; }
+
+  .spacer {
+    display: none; }
+
+  .photocard {
+    height: 20rem; } }
+@media (max-width: 642px) {
+  .header-table {
+    font-size: 0.75rem;
+    vertical-align: top; }
+
+  .logo {
+    width: 50px;
+    vertical-align: bottom; } }
+@media (max-width: 510px) {
+  .tab, .tab-select {
+    letter-spacing: 0.01rem;
+    font-size: 0.75rem;
+    padding: 0 0.3rem; }
+
+  .header-table {
+    font-size: 0.6rem;
+    vertical-align: top; } }
 
 /*# sourceMappingURL=main.css.map */

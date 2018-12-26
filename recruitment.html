@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Title for browser tab -->
   <title>SOU | Recruitment</title>
-  <link href="./main.css" type="text/css" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link href="main.css" type="text/css" rel="stylesheet">
+  <!-- Pull in font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Browser tab image -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <!-- Header -->
   <section class="header">
-  	<a class="logo" href="./index.html">
-      <img src="./images/sou_logo100.png"
-      onmouseover="this.src='./images/sou_logo100.png'"
-      onmouseout="this.src='./images/sou_logo100.png'"
-      alt="SOU Logo"/>
+  	<a class="logo" href="./index">
+      <img src="./img/sou_logo100.png"
+           alt="SOU Logo"/>
     </a>
-  	<table class="header-table">
-    	<tbody>
-        	<tr>
-            	<th><a  href="./index.html"><h1>SIGMA OMEGA UPSILON</h1></a></th>
-                <th><h1 class="divider"> | </h1></th>
-                <th><a href="http://vt.edu"><h2> Virginia Tech</h2></a></th>
-            </tr>
-            <tr>
-            	<td><h3>International Business Fraternity</h3></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="header-table">
+      <a href="index.html"><h1>SIGMA OMEGA UPSILON</h1>
+      <h1 class="divider"> | </h1>
+      <a href="http://vt.edu"><h2> at Virginia Tech</h2></a>
+      <h3>An International Business Fraternity</h3>
+    </div>
   </section>
+
+  <!-- Menu -->
   <section class="menu">
     <div class="tabs-container">
       <h4 class="spacer"> </h4>
@@ -36,38 +35,49 @@
       <a class="tab" href="pillars.html">Pillars</a>
       <a class="tab" href="brothers.html">Brothers</a>
       <a class="tab" href="gallery.html">Gallery</a>
+      <!-- Current Page -->
       <a class="tab-select" href="recruitment.html">Recruitment</a>
+      <!-- End Current Page -->
       <a class="tab" href="contact.html">Contact</a>
+      <a class="tab" href="register.html">Register</a>
+
       <h4 class="spacerflex"> </h4>
-      <a class="menu-contact" href="https://www.facebook.com/groups/1172872529405845/">
-      	<img src="./images/contact/facebook_black.png"
-      	onmouseover="this.src='./images/contact/facebook_white.png'"
-      	onmouseout="this.src='./images/contact/facebook_black.png'"
+
+      <a class="menu-contact" href="https://www.facebook.com/souatvt/">
+      	<img src="./img/contact/facebook_black.png"
+      	onmouseover="this.src='./img/contact/facebook_white.png'"
+      	onmouseout="this.src='./img/contact/facebook_black.png'"
       	alt="Facebook"/></a>
+      <!-- <a class="menu-contact" href="#">
+        <img src="./img/contact/twitter_black.png"
+      	onmouseover="this.src='./img/contact/twitter_white.png'"
+        onmouseout="this.src='./img/contact/twitter_black.png'"
+      	alt="Twitter"/></a> -->
       <a class="menu-contact" href="https://www.instagram.com/vt.sou/">
-      	<img src="./images/contact/instagram_black.png"
-      	onmouseover="this.src='./images/contact/instagram_white.png'"
-      	onmouseout="this.src='./images/contact/instagram_black.png'"
+      	<img src="./img/contact/instagram_black.png"
+      	onmouseover="this.src='./img/contact/instagram_white.png'"
+      	onmouseout="this.src='./img/contact/instagram_black.png'"
       	alt="Instagram"/></a>
-      <a class="menu-contact" href="https://www.linkedin.com/groups/8643741">
-      	<img src="./images/contact/linkedin_black.png"
-      	onmouseover="this.src='./images/contact/linkedin_white.png'"
-      	onmouseout="this.src='./images/contact/linkedin_black.png'"
+      <a class="menu-contact" href="https://www.linkedin.com/company/sigma-omega-upsilon-at-virginia-tech/">
+      	<img src="./img/contact/linkedin_black.png"
+      	onmouseover="this.src='./img/contact/linkedin_white.png'"
+      	onmouseout="this.src='./img/contact/linkedin_black.png'"
       	alt="LinkedIn"/></a>
       <h4 class="spacer"> </h4>
     </div>
   </section>
 
-  <section class="backgroundcontent">
+  <!-- Recruitment Page Content -->
+  <section class="backgroundcontent backgroundcontent-recruitment">
     <h3> </h3>
-  	<img src="./images/icon_white_recruit.png"/>
+    <img src="./img/icon_white_recruit.png"/>
     <h3>Recruitment</h3>
   </section>
 
   <section class="recruitment">
     <!--Headline-->
-    <h3 class="headline">Recruitment has ended for the Spring 2018 Semester.</h3>
-    <h3 class="text">Join us in the fall and visit us at Gobblerfest!</h3>
+    <h3 class="headline">Recruitment is beginning for the Fall 2018 Semester!</h3>
+    <h3 class="text">Join us this August and visit us at Gobblerfest!</h3>
     <h3 class="text">We would love to have you in SOU!</h3>
 
     <!--Divider bar between sections.-->
@@ -85,101 +95,91 @@
     <h5 class="line"> </h5>
 
     <!--Theme picture-->
-    <img src="./images/rushflyer.png"/>
+    <!-- Update Picture -->
+    <img id="rushflyer" src="./img/rushflyer_f18.jpg"/>
     <h5 class="line"> </h5>
 
     <!--Info about Rush-->
-    <h3 class="headline">Rush Events - Spring 2018</h3>
-    <table>
-      <tr>
-        <th><h3 class="date">February 5th, 2018 at 7pm</h3>
-    		<h3 class="event">Meet the Brothers</h3>
-    		<h3 class="location">Goodwin 155</h3>
-            <a class="rsvp" href="https://www.facebook.com/events/170387303578718/">RSVP Here</a></th>
-        <th><h3>○</h3></th>
-        <th><h3 class="date">February 6th, 2018 at 7pm</h3>
-    		<h3 class="event">Bowling & Billards</h3>
-    		<h3 class="location">Squires BreakZONE</h3>
-            <!--<a class="rsvp" href=""> </a>--></th>
-        <th><h3>○</h3></th>
-        <th><h3 class="date">February 7th, 2018 at 7pm</h3>
-    		<h3 class="event">Speed Dating</h3>
-    		<h3 class="location">Goodwin 135</h3>
-            <!--<a class="rsvp" href=""> </a>--></th>
-      </tr>
-      <tr>
-        <th> </th>
-        <th> </th>
-        <th><h3>○</h3></th>
-        <th> </th>
-        <th> </th>
-      </tr>
-      <tr>
-        <th> </th>
-        <th> </th>
-        <th><h3 class="date">February 12th, 2018 at 7pm</h3>
-    		<h3 class="event">Closed Rush</h3>
-    		<h3 class="location">Invite Only</h3>
-            <!--<a class="rsvp" href=""> </a>--></th>
-        <th> </th>
-        <th> </th>
-      </tr>
-    </table>
-    <!--<h3>○</h3>-->
-    <!--Event 1-->
-    <!--<h3 class="date">February 5th, 2018 at 7pm</h3>
-    <h3 class="event">Meet the Brothers</h3>
-    <h3 class="location">Location TBA</h3>
-    <h3>○</h3>-->
-    <!--Event 2-->
-    <!--<h3 class="date">February 6th, 2018 at 7pm</h3>
-    <h3 class="event">Game Night</h3>
-    <h3 class="location">Breakzone in Squires</h3>
-    <h3>○</h3>-->
-    <!--Event 3-->
-    <!--<h3 class="date">February 7th, 2018 at 7pm</h3>
-    <h3 class="event">Speed Dating (Business Casual)</h3>
-    <h3 class="location">Location TBA</h3>
-    <h3>○</h3>-->
-    <!--Event 4-->
-    <!--<h3 class="date">February 8th, 2018 at 7pm</h3>
-    <h3 class="event">Closed Rush</h3>
-    <h3 class="location">Location TBA</h3>
-    <h3>○</h3>-->
-    <!--Event 5-->
-    <!--<h3 class="date">February 12th, 2018 at 7pm</h3>
-    <h3 class="event">Interview (Business Professional)</h3>
-    <h3 class="location">Location TBA</h3>
-    <h3>○</h3>-->
-    <!--Event 6-->
-    <!--<h3 class="date">February 13th, 2018 at 7pm</h3>
-    <h3 class="event">Closed Rush Event</h3>
-    <h3 class="location">Location TBA</h3>
-    <h3 class="text">  </h3>
-    <h6 class="disclaimer">Unless otherwise specified, event dress code is casual.</h6>-->
+    <h3 class="headline">Rush Events - Spring 2019</h3>
+    <!-- Update every semester -->
+        <!-- place for each event listing - copy-paste the following code for each event below (will show up in the order you write them in) -->
+        <!-- <div class="card-container">
+          <div class="rushcard">
+            <h3 class="date">Date</h3>
+            <h3 class="event">Event Name</h3>
+            <h3 class="location">Location</h3> -->
+            <!-- Facebook RSVP link works nicely below for href value -->
+            <!-- <a class="rsvp" href="#" target="_blank">RSVP Here</a>
+          </div>
+        </div> -->
+        <!-- end place -->
+
+        <!-- Event 1 -->
+        <div class="card-container">
+          <div class="rushcard">
+            <h3 class="date">Date</h3>
+            <h3 class="event">Event Name</h3>
+            <h3 class="location">Location</h3>
+            <a class="rsvp" href="#" target="_blank">RSVP Here</a>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="card-container">
+          <div class="rushcard">
+            <h3 class="date">Date</h3>
+            <h3 class="event">Event Name</h3>
+            <h3 class="location">Location</h3>
+            <a class="rsvp" href="#" target="_blank">RSVP Here</a>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="card-container">
+          <div class="rushcard">
+            <h3 class="date">Date</h3>
+            <h3 class="event">Event Name</h3>
+            <h3 class="location">Location</h3>
+            <a class="rsvp" href="#" target="_blank">RSVP Here</a>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="card-container">
+          <div class="rushcard">
+            <h3 class="date">Date</h3>
+            <h3 class="event">Event Name</h3>
+            <h3 class="location">Location</h3>
+            <a class="rsvp" href="#" target="_blank">RSVP Here</a>
+          </div>
+        </div>
 
     <!--Divider bar between sections.-->
     <h3 class="line">_____________________________________</h3>
-
-    <!--Related pages-->
-    <section class="related">
-      <h2>Related</h2>
-      <img src="./images/icon_brothers.png"/>
-      <h3>SOU is consisted of a diverse set of members.</h3>
-      <a href="./brothers.html">Learn more about the brothers here.</a>
-      <h5> </h5>
-      <img src="./images/icon_contact.png"/>
-      <h3 class="nonlist">Talk to us.</h3>
-      <a href="./contact.html">See all of our contacts here.</a>
-      <h5> </h5>
-      </section>
   </section>
 
+  <!--Related pages-->
+  <section class="related">
+    <h2>Related</h2>
+    <img src="./img/icon_brothers.png"/>
+    <h3>SOU is consisted of a diverse set of members.</h3>
+    <a href="brothers.html">Learn more about the brothers here.</a>
+    <h5> </h5>
+    <img src="./img/icon_contact.png"/>
+    <h3 class="nonlist">Talk to us.</h3>
+    <a href="contact.html">See all of our contacts here.</a>
+    <h5> </h5>
+    </section>
+  <!-- End page content -->
+
+  <!-- Footer -->
   <section class="menu">
     <div class="footer-container">
+      <!--Edit year as needed-->
       <h6>&copy; 2018 Sigma Omega Upsilon at Virginia Tech</h6>
-      <!--Website and Images created by Heather Cole (hlcole.com)-->
-      <h6>Created by <a href="http://hlcole.com">Heather Cole</a></h6>
+      <!--End need to edit-->
+
+      <h6>Template created by <a href="http://hlcole.com">Heather Cole</a></h6>
     </div>
   </section>
 </body>

@@ -1,197 +1,316 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Title for browser tab -->
   <title>SOU | Brothers</title>
-  <link href="./main.css" type="text/css" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link href="main.css" type="text/css" rel="stylesheet">
+  <!-- Pull in font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Browser tab image -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <!-- Header -->
   <section class="header">
-  	<a class="logo" href="./index.html">
-      <img src="./images/sou_logo100.png"
-      onmouseover="this.src='./images/sou_logo100.png'"
-      onmouseout="this.src='./images/sou_logo100.png'"
-      alt="SOU Logo"/>
+  	<a class="logo" href="./index">
+      <img src="./img/sou_logo100.png"
+           alt="SOU Logo"/>
     </a>
-  	<table class="header-table">
-    	<tbody>
-        	<tr>
-            	<th><a  href="./index.html"><h1>SIGMA OMEGA UPSILON</h1></a></th>
-                <th><h1 class="divider"> | </h1></th>
-                <th><a href="http://vt.edu"><h2> Virginia Tech</h2></a></th>
-            </tr>
-            <tr>
-            	<td><h3>International Business Fraternity</h3></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="header-table">
+      <a href="index.html"><h1>SIGMA OMEGA UPSILON</h1>
+      <h1 class="divider"> | </h1>
+      <a href="http://vt.edu"><h2> at Virginia Tech</h2></a>
+      <h3>An International Business Fraternity</h3>
+    </div>
   </section>
+
+  <!-- Menu -->
   <section class="menu">
     <div class="tabs-container">
       <h4 class="spacer"> </h4>
       <a class="tab" href="index.html">Home</a>
       <a class="tab" href="about.html">About</a>
       <a class="tab" href="pillars.html">Pillars</a>
+      <!-- Current Page -->
       <a class="tab-select" href="brothers.html">Brothers</a>
+      <!-- End Current Page -->
       <a class="tab" href="gallery.html">Gallery</a>
       <a class="tab" href="recruitment.html">Recruitment</a>
       <a class="tab" href="contact.html">Contact</a>
+      <a class="tab" href="register.html">Register</a>
+
       <h4 class="spacerflex"> </h4>
-      <a class="menu-contact" href="https://www.facebook.com/groups/1172872529405845/">
-      	<img src="./images/contact/facebook_black.png"
-      	onmouseover="this.src='./images/contact/facebook_white.png'"
-      	onmouseout="this.src='./images/contact/facebook_black.png'"
+
+      <a class="menu-contact" href="https://www.facebook.com/souatvt/">
+      	<img src="./img/contact/facebook_black.png"
+      	onmouseover="this.src='./img/contact/facebook_white.png'"
+      	onmouseout="this.src='./img/contact/facebook_black.png'"
       	alt="Facebook"/></a>
+      <!-- <a class="menu-contact" href="#">
+        <img src="./img/contact/twitter_black.png"
+      	onmouseover="this.src='./img/contact/twitter_white.png'"
+        onmouseout="this.src='./img/contact/twitter_black.png'"
+      	alt="Twitter"/></a> -->
       <a class="menu-contact" href="https://www.instagram.com/vt.sou/">
-      	<img src="./images/contact/instagram_black.png"
-      	onmouseover="this.src='./images/contact/instagram_white.png'"
-      	onmouseout="this.src='./images/contact/instagram_black.png'"
+      	<img src="./img/contact/instagram_black.png"
+      	onmouseover="this.src='./img/contact/instagram_white.png'"
+      	onmouseout="this.src='./img/contact/instagram_black.png'"
       	alt="Instagram"/></a>
-      <a class="menu-contact" href="https://www.linkedin.com/groups/8643741">
-      	<img src="./images/contact/linkedin_black.png"
-      	onmouseover="this.src='./images/contact/linkedin_white.png'"
-      	onmouseout="this.src='./images/contact/linkedin_black.png'"
+      <a class="menu-contact" href="https://www.linkedin.com/company/sigma-omega-upsilon-at-virginia-tech/">
+      	<img src="./img/contact/linkedin_black.png"
+      	onmouseover="this.src='./img/contact/linkedin_white.png'"
+      	onmouseout="this.src='./img/contact/linkedin_black.png'"
       	alt="LinkedIn"/></a>
       <h4 class="spacer"> </h4>
     </div>
   </section>
 
-  <section class="backgroundcontent">
+  <!-- Brothers Page Content -->
+  <section class="backgroundcontent backgroundcontent-brothers">
     <h3> </h3>
-  	<img src="./images/icon_white_brothers.png"/>
+    <img src="./img/icon_white_brothers.png"/>
     <h3>The Brothers</h3>
   </section>
 
   <section class="brothers">
     <h3 class="text">SOU is consisted of a diverse set of members.</h3>
-    <img src="./images/brothers_f17.png"/>
+    <img src="./img/gallery/<?= $chapter->img ?>"/>
     <h5 class="line"> </h5>
-    <a class="jump" href="./brothers.html#Exec">Executive Board</a>
-    <a class="jump" href="./brothers.html#Pledge">Sigma Classes</a>
-    <a class="jump" href="./brothers.html#Past">Past Brothers</a>
-    <a class="jump" href="./brothers.html#Alum">Alumni</a>
-    <a class="jump" href="./brothers.html#Founders">Founders</a>
+    <a class="jump" href="brothers.html#Exec">Executive Board</a>
+    <a class="jump" href="brothers.html#Pledge">Sigma Classes</a>
+    <a class="jump" href="brothers.html#Past">Our Chapter</a>
+    <a class="jump" href="brothers.html#Alum">Alumni</a>
+    <a class="jump" href="brothers.html#Founders">Founders</a>
 
     <!--Divider bar between sections.-->
     <h5 class="line" id="Exec"> </h5>
+    <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
     <h5 class="line"> </h5>
 
     <h3 class="text">Executive Board</h3>
-
-    <h4 class="text">Chief Executive Officer</h4>
-    <!--<h4 class="text">Caroline Cannon</h4>-->
     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/carolineacannon/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Operating Officer of Members</h4>
-    <!--<h4 class="text">Daniel Baek</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/danieljbaek/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Operating Officer of Sigmas</h4>
-    <!--<h4 class="text">Garrett Fraino</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/garrett-fraino-ab05b1a8/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chairman of the Executive Board</h4>
-    <!--<h4 class="text">Austen Veit</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/austen-veit-7a2261127/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Human Resources Officer</h4>
-    <!--<h4 class="text">Sarah Lachman</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/sarah-lachman-aab98a13a/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Financial Officer</h4>
-    <!--<h4 class="text">Megan Miller</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/megan-miller-03314a127/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Information Officer</h4>
-    <!--<h4 class="text">Khanh-Chau Mai</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/khanh-chau-mai/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Marketing Officer</h4>
-    <!--<h4 class="text">Craig Benson</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/craigbensonjr/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Chief Programming Officer</h4>
-    <!--<h4 class="text">Shelby Houlahan</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/shelbyhoulahan/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Audit Chair</h4>
-    <!--<h4 class="text">Gabriel Reynolds</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/gabrielreynolds/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Rush Chair</h4>
-    <!--<h4 class="text">Hamim Bashar</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/hamimbashar/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Secretary</h4>
-    <!--<h4 class="text">Nadia Ali</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/nadiatali/" data-format="inline" data-related="false"></script>
-
-    <h4 class="text">Ritual Chair</h4>
-    <!--<h4 class="text">Causey Meadors</h4>-->
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/causey-meadors-26bb07131/" data-format="inline" data-related="false"></script>
+    <!--
+    Update every semester.
+    in each <script> element:
+      data-id="" should have the person's LinkedIn url.
+      data-test="" should have the person's name.
+    -->
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Executive Officer</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/nadiatali/" data-format="hover" data-related="false" data-text="Nadia Ali"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Operating Officer of Members</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/shazeenquadri/" data-format="hover" data-related="false" data-text="Shazeen Quadri"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Operating Officer of Sigmas</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/carolineacannon/" data-format="hover" data-related="false" data-text="Caroline Cannon"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chairman of the Executive Board</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/shereen-awad-a66a2b153/" data-format="hover" data-related="false" data-text="Shereen Awad"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Financial Officer</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/causey-meadors-26bb07131/" data-format="hover" data-related="false" data-text="Causey Meadors"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Information Officer</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/khanh-chau-mai/" data-format="hover" data-related="false" data-text="Khanh-Chau Mai"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Marketing Officer</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/miragrace/" data-format="hover" data-related="false" data-text="Mira Soni"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Programming Officer</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/" data-format="hover" data-related="false" data-text="Sehjal Atwal"></script>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h4 class="text">Chief Human Resources Officer</h4>
+          <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/sarah-lachman-aab98a13a/" data-format="hover" data-related="false" data-text="Sarah Lachman"></script>
+        </div>
+      </div>
+    <!-- End Exec -->
 
     <!--Divider bar between sections.-->
     <h5 class="line" id="Pledge"> </h5>
+    <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
     <h5 class="line"> </h5>
 
     <h3 class="text">Sigma Classes</h3>
-    <h4 class="text">Class of Fall 2017</h4>
-    <img src="./images/gallery/pledgeclass_f17.png"/>
-    <h6 class="text">Pictured: Ryan Cheung, Causey Meadors, Nicholas Fallon, Hamim Bashar, Heather Cole, Shereen Awad, Mira Soni, Nadia Ali, Sehjal Atwal. Missing: Shelby Houlahan.</h6>
-    <h4 class="text">Class of Spring 2017</h4>
-    <img src="./images/gallery/pledgeclass_s17.png"/>
-    <h6 class="text">Pictured: Garrett Fraino, Austen Veit, Cooper Besougloff, Anne Nelson, Craig Benson, Sarah Lachman, Jay Aliaga.</h6>
-    <h4 class="text">Class of Fall 2016</h4>
-    <img src="./images/gallery/pledgeclass_f16.png"/>
-    <h6 class="text">Pictured: Caroline Cannon, Gabriel Reynolds, Khanh-Chau Mai, Raya Custard, Michelle Chau, Megan Miller, Brieann Hayslett, Daniel Baek.</h6>
+    <!--
+    Update every semester by copying the code below & update the semester, photo, and names.
+
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Class of Semester Year</h4>
+        <img src="./img/gallery/pledgeclass_f18.png"/>
+        <h6 class="text">Pictured: Names.</h6>
+      </div>
+    </div>
+    -->
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Class of Fall 2018</h4>
+        <img src="./img/gallery/pledgeclass_f18.png"/>
+        <h6 class="text">Pictured: .</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Class of Spring 2018</h4>
+        <img src="./img/gallery/pledgeclass_s18.png"/>
+        <h6 class="text">Pictured: Adam Corey, Kyle Fredrick, Sam Meeker, Amrita Kanuri, Melianty Yularnis, Veronique Caumeil, Shazeen Quadri.</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Class of Fall 2017</h4>
+        <img src="./img/gallery/pledgeclass_f17.png"/>
+        <h6 class="text">Pictured: Ryan Cheung, Causey Meadors, Nicholas Fallon, Hamim Bashar, Heather Cole, Shereen Awad, Mira Soni, Nadia Ali, Sehjal Atwal. Missing: Shelby Houlahan.</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Class of Spring 2017</h4>
+        <img src="./img/gallery/pledgeclass_s17.png"/>
+        <h6 class="text">Pictured: Garrett Fraino, Austen Veit, Cooper Besougloff, Anne Nelson, Craig Benson, Sarah Lachman, Jay Aliaga.</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Class of Fall 2016</h4>
+        <img src="./img/gallery/pledgeclass_f16.png"/>
+        <h6 class="text">Pictured: Caroline Cannon, Gabriel Reynolds, Khanh-Chau Mai, Raya Custard, Michelle Chau, Megan Miller, Brieann Hayslett, Daniel Baek.</h6>
+      </div>
+    </div>
 
     <!--Divider bar between sections.-->
     <h5 class="line" id="Past"> </h5>
+    <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
     <h5 class="line"> </h5>
 
-    <h3 class="text">Past Brothers</h3>
-    <h4 class="text">Brothers of Fall 2017</h4>
-    <img src="./images/gallery/brothers_f17.png"/>
-    <h4 class="text">Brothers of Fall 2016</h4>
-    <img src="./images/gallery/brothers_f16.png"/>
+    <h3 class="text">Our Chapter</h3>
+    <!--
+    Update every semester by copying the below code & updating the semester and photo.
+
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Semester Year</h4>
+        <img src="./img/gallery/brothers_f18.png"/>
+      </div>
+    </div>
+    -->
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Fall 2018</h4>
+        <img src="./img/gallery/brothers_f18.png"/>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Spring 2018</h4>
+        <img src="./img/gallery/brothers_s18.png"/>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Fall 2017</h4>
+        <img src="./img/gallery/brothers_f17.png"/>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="photocard">
+        <h4 class="text">Fall 2016</h4>
+        <img src="./img/gallery/brothers_f16.png"/>
+      </div>
+    </div>
 
     <!--Divider bar between sections.-->
     <h5 class="line" id="Alum"> </h5>
+    <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
     <h5 class="line"> </h5>
 
     <h3 class="text">Alumni</h3>
+    <!--
+    Update as people graduate by copying the below code & fill in the brother name and semester.
 
-    <h4 class="text">- Class of Spring 2017 -</h4>
-    <h4 class="text">Dakota McManus</h4>
-    <h4 class="text">Alyssa Reyna</h4>
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Brother Name</h4>
+        <h6 class="text">- Class of Semester Year -</h6>
+      </div>
+    </div>
+    -->
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Austen Veit</h4>
+        <h6 class="text">- Class of Fall 2018 -</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Heather Cole</h4>
+        <h6 class="text">- Class of Fall 2018 -</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Alyssa Rhee</h4>
+        <h6 class="text">- Class of Spring 2018 -</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Garrett Fraino</h4>
+        <h6 class="text">- Class of Spring 2018 -</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Alyssa Reyna</h4>
+        <h6 class="text">- Class of Spring 2017 -</h6>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h4 class="text">Dakota McManus</h4>
+        <h6 class="text">- Class of Spring 2017 -</h6>
+      </div>
+    </div>
 
     <!--Divider bar between sections.-->
     <h5 class="line" id="Founders"> </h5>
+    <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
     <h5 class="line"> </h5>
 
-    <h3 class="text">Founders</h3>
-    
-    <h3 class="text">Beta Chapter</h3>
+    <h3 class="text">Beta Chapter Founders</h3>
 
     <h4 class="text">Dakota McManus</h4>
     <h4 class="text">Alyssa Rhee</h4>
@@ -201,24 +320,29 @@
     <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
 
-    <section class="related">
-      <h2>Related</h2>
-      <img src="./images/icon_about.png"/>
-      <h3>Sigma Omega Upsilon is a co-ed, professional fraternity.</h3>
-      <a href="./about.html">Learn more about us here.</a>
-      <h5> </h5>
-      <img src="./images/icon_recruit.png"/>
-      <h3>We would love to have you in SOU!</h3>
-      <a href="./recruitment.html">Learn more about joining here.</a>
-      <h5> </h5>
-    </section>
   </section>
 
+  <section class="related">
+    <h2>Related</h2>
+    <img src="./img/icon_about.png"/>
+    <h3>Sigma Omega Upsilon is a co-ed, professional fraternity.</h3>
+    <a href="about.html">Learn more about us here.</a>
+    <h5> </h5>
+    <img src="./img/icon_recruit.png"/>
+    <h3>We would love to have you in SOU!</h3>
+    <a href="recruitment.html">Learn more about joining here.</a>
+    <h5> </h5>
+  </section>
+  <!-- end page content -->
+
+  <!-- Footer -->
   <section class="menu">
     <div class="footer-container">
+      <!--Edit year as needed-->
       <h6>&copy; 2018 Sigma Omega Upsilon at Virginia Tech</h6>
-      <!--Website and Images created by Heather Cole (hlcole.com)-->
-      <h6>Created by <a href="http://hlcole.com">Heather Cole</a></h6>
+      <!--End need to edit-->
+
+      <h6>Template created by <a href="http://hlcole.com">Heather Cole</a></h6>
     </div>
   </section>
 </body>

@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Title for browser tab -->
   <title>SOU | Gallery</title>
-  <link href="./main.css" type="text/css" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link href="main.css" type="text/css" rel="stylesheet">
+  <!-- Pull in font -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Browser tab image -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <!-- Header -->
   <section class="header">
-  	<a class="logo" href="./index.html">
-      <img src="./images/sou_logo100.png"
-      onmouseover="this.src='./images/sou_logo100.png'"
-      onmouseout="this.src='./images/sou_logo100.png'"
-      alt="SOU Logo"/>
+  	<a class="logo" href="./index">
+      <img src="./img/sou_logo100.png"
+           alt="SOU Logo"/>
     </a>
-  	<table class="header-table">
-    	<tbody>
-        	<tr>
-            	<th><a  href="./index.html"><h1>SIGMA OMEGA UPSILON</h1></a></th>
-                <th><h1 class="divider"> | </h1></th>
-                <th><a href="http://vt.edu"><h2> Virginia Tech</h2></a></th>
-            </tr>
-            <tr>
-            	<td><h3>International Business Fraternity</h3></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="header-table">
+      <a href="index.html"><h1>SIGMA OMEGA UPSILON</h1>
+      <h1 class="divider"> | </h1>
+      <a href="http://vt.edu"><h2> at Virginia Tech</h2></a>
+      <h3>An International Business Fraternity</h3>
+    </div>
   </section>
+
+  <!-- Menu -->
   <section class="menu">
     <div class="tabs-container">
       <h4 class="spacer"> </h4>
@@ -35,135 +34,536 @@
       <a class="tab" href="about.html">About</a>
       <a class="tab" href="pillars.html">Pillars</a>
       <a class="tab" href="brothers.html">Brothers</a>
+      <!-- Current Page -->
       <a class="tab-select" href="gallery.html">Gallery</a>
+      <!-- End Current Page -->
       <a class="tab" href="recruitment.html">Recruitment</a>
       <a class="tab" href="contact.html">Contact</a>
+      <a class="tab" href="register.html">Register</a>
+
       <h4 class="spacerflex"> </h4>
-      <a class="menu-contact" href="https://www.facebook.com/groups/1172872529405845/">
-      	<img src="./images/contact/facebook_black.png"
-      	onmouseover="this.src='./images/contact/facebook_white.png'"
-      	onmouseout="this.src='./images/contact/facebook_black.png'"
+
+      <a class="menu-contact" href="https://www.facebook.com/souatvt/">
+      	<img src="./img/contact/facebook_black.png"
+      	onmouseover="this.src='./img/contact/facebook_white.png'"
+      	onmouseout="this.src='./img/contact/facebook_black.png'"
       	alt="Facebook"/></a>
+      <!-- <a class="menu-contact" href="#">
+        <img src="./img/contact/twitter_black.png"
+      	onmouseover="this.src='./img/contact/twitter_white.png'"
+        onmouseout="this.src='./img/contact/twitter_black.png'"
+      	alt="Twitter"/></a> -->
       <a class="menu-contact" href="https://www.instagram.com/vt.sou/">
-      	<img src="./images/contact/instagram_black.png"
-      	onmouseover="this.src='./images/contact/instagram_white.png'"
-      	onmouseout="this.src='./images/contact/instagram_black.png'"
+      	<img src="./img/contact/instagram_black.png"
+      	onmouseover="this.src='./img/contact/instagram_white.png'"
+      	onmouseout="this.src='./img/contact/instagram_black.png'"
       	alt="Instagram"/></a>
-      <a class="menu-contact" href="https://www.linkedin.com/groups/8643741">
-      	<img src="./images/contact/linkedin_black.png"
-      	onmouseover="this.src='./images/contact/linkedin_white.png'"
-      	onmouseout="this.src='./images/contact/linkedin_black.png'"
+      <a class="menu-contact" href="https://www.linkedin.com/company/sigma-omega-upsilon-at-virginia-tech/">
+      	<img src="./img/contact/linkedin_black.png"
+      	onmouseover="this.src='./img/contact/linkedin_white.png'"
+      	onmouseout="this.src='./img/contact/linkedin_black.png'"
       	alt="LinkedIn"/></a>
       <h4 class="spacer"> </h4>
     </div>
   </section>
 
-  <section class="backgroundcontent">
+  <section class="backgroundcontent backgroundcontent-gallery">
     <h3> </h3>
-  	<img src="./images/icon_white_gallery.png"/>
+    <img src="./img/icon_white_gallery.png"/>
     <h3>Gallery</h3>
   </section>
 
+  <!-- Gallery Page Content -->
   <section class="gallery">
     <h3 class="text">Our shared interest of traveling the world brings us together.</h3>
     <h5 class="line"> </h5>
-    <a class="jump" href="./gallery.html#Abroad">Abroad</a>
-    <a class="jump" href="./gallery.html#Rush">Rush Events</a>
-    <a class="jump" href="./gallery.html#Social">Social Events</a>
-    <a class="jump" href="./gallery.html#Families">SOU Families</a>
-    <a class="jump" href="./gallery.html#Pledge">Sigma Classes</a>
-    <a class="jump" href="./gallery.html#Past">The Brothers</a>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#">All</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Abroad">Abroad</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Rush">Rush Events</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Social">Social</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Cultural">Cultural</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Professional">Professional</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Families">SOU Families</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Pledge">Sigma Classes</a>
+          </div>
+        </div>
+          <!-- place for each photo listing -->
+        <div class="jump-container">
+          <div class="jump-contain">
+            <a class="jump" href=".#Past">The Brothers</a>
+          </div>
+        </div>
+
+    <div id="gallery-abroad">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Abroad"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">Adventures Abroad</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/abroad_country_0.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+            <!-- Australia -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_australia_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_australia_2.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_australia_3.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_australia_4.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_australia_5.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- Austria -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_austria_1.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- Dominican Republic -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_dominicanrepublic_1.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- France -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_france_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_france_2.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- Italy -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_italy_1.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- Japan -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_japan_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_japan_2.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- New Zealand -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_newzealand_1.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- Spain -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_spain_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/abroad_spain_2.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- add above this comment line in alphabetical order -->
+    </div>
+
+    <div id="gallery-rush">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Rush"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">Rush Events</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/rush_s18.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/rush_f17_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/rush_f17_2.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- add above this comment line -->
+    </div>
+
+    <div id="gallery-soc">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Social"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">Social Events</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/social_s18.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/social_f17_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/social_f17_2.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/social_f17_3.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/social_f17_4.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- add above this comment line -->
+    </div>
+
+    <div id="gallery-cul">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Cultural"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">Cultural Events</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/cul_s18.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+
+      <!-- add above this comment line -->
+    </div>
+
+    <div id="gallery-pro">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Professional"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">Professional Events</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/pro_s18.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/pro_s18.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- add above this comment line -->
+    </div>
+
+
+    <div id="gallery-fam">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Families"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">SOU Families</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/families_f17.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/families_f17_1.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/families_f17_2.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/families_s17_1.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- add above this comment line -->
+    </div>
+
+    <div id="gallery-sig">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Pledge"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">Sigma Classes</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/pledgeclass_f18.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/pledgeclass_f16.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/pledgeclass_s17.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/pledgeclass_f17.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/pledgeclass_s18.png"/>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="img-container">
+                  <img src="./img/gallery/pledgeclass_f18.png"/>
+                </div>
+              </div>
+            </div>
+            <!-- add above this comment line -->
+    </div>
+
+    <div id="gallery-chap">
+      <!--Divider bar between sections.-->
+      <h5 class="line" id="Past"> </h5>
+      <h3 class="line">_____________________________________</h3>
+      <h5 class="line"> </h5>
+
+      <h3 class="text">The Brothers</h3>
+      <!--
+      Update every semester with new photo by copying the below code.
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./img/gallery/brothers_f18.png"/>
+          </div>
+        </div>
+      </div>
+      -->
+          <div class="card-container">
+            <div class="card">
+              <div class="img-container">
+                <img src="./img/gallery/brothers_f16.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+                <div class="img-container">
+                <img src="./img/gallery/brothers_f17.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-container">
+                <img src="./img/gallery/brothers_s18.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="img-container">
+                <img src="./img/gallery/brothers_f18.png"/>
+              </div>
+            </div>
+          </div>
+          <!-- add above this comment line -->
+    </div>
+
 
     <!--Divider bar between sections.-->
-    <h5 class="line" id="Abroad"> </h5>
-    <h3 class="line">_____________________________________</h3>
-    <h5 class="line"> </h5>
-
-    <h3 class="text">Adventures Abroad</h3>
-    <img class="picgallery" src="./images/gallery/abroad_australia_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_australia_2.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_australia_3.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_australia_4.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_australia_5.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_austria_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_dominicanrepublic_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_france_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_france_2.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_italy_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_japan_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_japan_2.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_newzealand_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_spain_1.png"/>
-    <img class="picgallery" src="./images/gallery/abroad_spain_2.png"/>
-
-    <!--Divider bar between sections.-->
-    <h5 class="line" id="Rush"> </h5>
-    <h3 class="line">_____________________________________</h3>
-    <h5 class="line"> </h5>
-
-    <h3 class="text">Rush Events</h3>
-    <img class="picgallery" src="./images/gallery/rush_f17_1.png"/>
-    <img class="picgallery" src="./images/gallery/rush_f17_2.png"/>
-
-    <!--Divider bar between sections.-->
-    <h5 class="line" id="Social"> </h5>
-    <h3 class="line">_____________________________________</h3>
-    <h5 class="line"> </h5>
-
-    <h3 class="text">Social Events</h3>
-    <img class="picgallery" src="./images/gallery/social_f17_1.png"/>
-    <img class="picgallery" src="./images/gallery/social_f17_2.png"/>
-    <img class="picgallery" src="./images/gallery/social_f17_3.png"/>
-    <img class="picgallery" src="./images/gallery/social_f17_4.png"/>
-
-    <!--Divider bar between sections.-->
-    <h5 class="line" id="Families"> </h5>
-    <h3 class="line">_____________________________________</h3>
-    <h5 class="line"> </h5>
-
-    <h3 class="text">SOU Families</h3>
-    <img class="picgallery" src="./images/gallery/families_f17_1.png"/>
-    <img class="picgallery" src="./images/gallery/families_f17_2.png"/>
-    <img class="picgallery" src="./images/gallery/families_s17_1.png"/>
-
-    <!--Divider bar between sections.-->
-    <h5 class="line" id="Pledge"> </h5>
-    <h3 class="line">_____________________________________</h3>
-    <h5 class="line"> </h5>
-
-    <h3 class="text">Sigma Classes</h3>
-    <img class="picgallery" src="./images/gallery/pledgeclass_f17.png"/>
-    <img class="picgallery" src="./images/gallery/pledgeclass_s17.png"/>
-    <img class="picgallery" src="./images/gallery/pledgeclass_f16.png"/>
-
-    <!--Divider bar between sections.-->
-    <h5 class="line" id="Past"> </h5>
-    <h3 class="line">_____________________________________</h3>
-    <h5 class="line"> </h5>
-
-    <h3 class="text">The Brothers</h3>
-    <img class="picgallery" src="./images/gallery/brothers_f17.png"/>
-    <img class="picgallery" src="./images/gallery/brothers_f16.png"/>
-
-
-    <!--Divider bar between sections.-->
     <h5 class="line"> </h5>
     <h3 class="line">_____________________________________</h3>
 
-    <section class="related">
-      <h2>Related</h2>
-      <img src="./images/icon_recruit.png"/>
-      <h3>We would love to have you in SOU!</h3>
-      <a href="./recruitment.html">Learn more about joining here.</a>
-      <h5> </h5>
-    </section>
   </section>
+  <!-- End page content -->
 
+  <!-- Footer -->
   <section class="menu">
     <div class="footer-container">
+      <!--Edit year as needed-->
       <h6>&copy; 2018 Sigma Omega Upsilon at Virginia Tech</h6>
-      <!--Website and Images created by Heather Cole (hlcole.com)-->
-      <h6>Created by <a href="http://hlcole.com">Heather Cole</a></h6>
+      <!--End need to edit-->
+
+      <h6>Template created by <a href="http://hlcole.com">Heather Cole</a></h6>
     </div>
   </section>
 </body>
