@@ -148,7 +148,7 @@ a {
 .backgroundcontent-home {
   clear: both;
   /* change the image for home page */
-  background-image: url("./img/fall.jpg");
+  background-image: url("./img/winter.jpg");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
