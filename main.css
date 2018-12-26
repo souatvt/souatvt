@@ -209,7 +209,7 @@ a {
 .backgroundcontent {
   clear: both;
   /* default background image */
-  background-image: url("./img/fall.jpg");
+  background-image: url("./img/winter.jpg");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
