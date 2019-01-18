@@ -148,7 +148,7 @@ a {
 .backgroundcontent-home {
   clear: both;
   /* change the image for home page */
-  background-image: url("./img/winter.png");
+  background-image: url("./img/winter.png"); /* fall.jpg or winter.png */
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +209,7 @@ a {
 .backgroundcontent {
   clear: both;
   /* default background image */
-  background-image: url("./img/winter.png");
+  background-image: url("./img/winter.png"); /* fall.jpg or winter.png */
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,31 +226,31 @@ a {
 
 .backgroundcontent-about {
   /* change the image for about page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .backgroundcontent-pillars {
   /* change the image for pillars page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .backgroundcontent-brothers {
   /* change the image for brothers page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .backgroundcontent-gallery {
   /* change the image for gallery page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .backgroundcontent-recruitment {
   /* change the image for recruitment page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .backgroundcontent-contact {
   /* change the image for contact page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .backgroundcontent-register {
   /* change the image for register page */
-  background-image: url("./img/fall.jpg"); }
+  background-image: url("./img/winter.png"); } /* fall.jpg or winter.png */
 
 .about, .pillars, .brothers, .gallery, .recruitment, .contact, .register {
   padding: 2rem;
